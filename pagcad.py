@@ -19,7 +19,8 @@ class Login(BoxLayout):
         self.orientation = "vertical"
         self.padding = [100, 100]
         self.spacing = 10
-
+        self.img = Image(source='IMG_9831-removebg-preview.png', size_hint=(None,None),size=(200,200), pos_hint={'x': 0.44})
+        self.add_widget(self.img)
 
         self.add_widget(Image(source=('IMG_9831-removebg-preview.png'), size=(200, 200)))
         self.add_widget(Label(text="ChefeVirtual", font_size=50, font_name='Impact', color=get_color_from_hex('#d5fff4')))
